@@ -3,9 +3,14 @@ package com.amazon.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.amazon.qa.base.TestBase;
 
+/**
+ * @author amit.mahajan
+ *
+ */
 public class HomePage extends TestBase {
 	
 	
@@ -21,7 +26,8 @@ public class HomePage extends TestBase {
 	static WebElement Logo;
 	
 	
-	
+	@FindBy(xpath="//select[@id='searchDropdownBox']")
+	static WebElement SearchDropdown;
 	
 	
 	
@@ -48,5 +54,19 @@ public class HomePage extends TestBase {
 		
 		
 	}
+	
+	
+	
+	public static String Selectcategory() throws InterruptedException {
+		
+		
+		Select Category = new Select(SearchDropdown);
+		Category.selectByVisibleText("Kindle Store");
+		Thread.sleep(2000);
+		String CatVal = Category.getFirstSelectedOption().getText();
+		return CatVal;
+		
+	}
+	
 
 }

@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13054" started-at="2019-06-01T07:43:59Z" finished-at="2019-06-01T07:44:12Z">
+  <suite name="Default suite" duration-ms="36138" started-at="2019-06-02T07:01:20Z" finished-at="2019-06-02T07:01:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13054" started-at="2019-06-01T07:43:59Z" finished-at="2019-06-01T07:44:12Z">
+    <test name="Default test" duration-ms="36138" started-at="2019-06-02T07:01:20Z" finished-at="2019-06-02T07:01:57Z">
       <class name="com.amazon.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@f6c48ac]" name="Setup" is-config="true" duration-ms="10481" started-at="2019-06-01T07:43:59Z" finished-at="2019-06-01T07:44:09Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@146ba0ac]" name="Setup" is-config="true" duration-ms="16328" started-at="2019-06-02T07:01:20Z" finished-at="2019-06-02T07:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="VerifyLogoTest()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@f6c48ac]" name="VerifyLogoTest" duration-ms="158" started-at="2019-06-01T07:44:09Z" finished-at="2019-06-01T07:44:09Z">
+        <test-method status="PASS" signature="VerifyLogoTest()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@146ba0ac]" name="VerifyLogoTest" duration-ms="165" started-at="2019-06-02T07:01:37Z" finished-at="2019-06-02T07:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLogoTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@f6c48ac]" name="teardown" is-config="true" duration-ms="2357" started-at="2019-06-01T07:44:09Z" finished-at="2019-06-01T07:44:12Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@146ba0ac]" name="teardown" is-config="true" duration-ms="288" started-at="2019-06-02T07:01:37Z" finished-at="2019-06-02T07:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@146ba0ac]" name="Setup" is-config="true" duration-ms="14278" started-at="2019-06-02T07:01:37Z" finished-at="2019-06-02T07:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="VerifySelectedOptionSearch()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@146ba0ac]" name="VerifySelectedOptionSearch" duration-ms="2878" started-at="2019-06-02T07:01:52Z" finished-at="2019-06-02T07:01:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectedOptionSearch -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@146ba0ac]" name="teardown" is-config="true" duration-ms="2143" started-at="2019-06-02T07:01:54Z" finished-at="2019-06-02T07:01:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

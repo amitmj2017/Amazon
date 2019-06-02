@@ -5,9 +5,9 @@
     <classes>
       <class name="com.amazon.qa.testcases.HomePageTest">
         <methods>
-          <include name="VerifyLogoTest"/>
           <include name="teardown"/>
           <include name="Setup"/>
+          <include name="VerifySelectedOptionSearch"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.HomePageTest -->
     </classes>

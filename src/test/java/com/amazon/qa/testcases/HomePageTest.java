@@ -19,9 +19,10 @@ public class HomePageTest extends TestBase {
 	public static HomePage hp;
 	
 	@BeforeMethod
-	public void Setup() {
+	public void Setup() throws InterruptedException {
 		
 		initialization();
+		Thread.sleep(3000);
 		 hp = new HomePage();	
 	}
 	
@@ -33,6 +34,17 @@ public class HomePageTest extends TestBase {
 		boolean hplogo = hp.VerifyHomePageLogo();
 		
 		Assert.assertTrue(hplogo);
+		
+	}
+	
+	@Test
+	public void VerifySelectedOptionSearch() throws InterruptedException {
+		
+		
+		
+		String CatVal = hp.Selectcategory();
+		Assert.assertEquals(CatVal, "Kindle Store");
+		
 		
 	}
 	
@@ -51,6 +63,7 @@ public class HomePageTest extends TestBase {
 		
 		
 		driver.close();
+		
 		
 	}
 	
