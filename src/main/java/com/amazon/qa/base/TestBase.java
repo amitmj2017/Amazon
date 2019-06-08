@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
@@ -45,6 +46,9 @@ public class TestBase {
 			
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "\\src\\main\\java\\com\\amazon\\qa\\data\\chromedriver.exe");
 			driver = new ChromeDriver();
+			// ChromeOptions options = new ChromeOptions();
+             //options.addArguments("--disable-impl-side-painting"); //To fix no such session exception when problem which appears when running tests for a prolonged period : https://github.com/Chatie/wechaty/issues/756
+             //driver = new ChromeDriver(options);
 			
 		}
 		
