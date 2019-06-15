@@ -28,7 +28,6 @@ public class SearchResultPageTest extends TestBase {
 	@BeforeMethod
 	public void Setup() throws InterruptedException {
 		
-		
 		initialization();
 		Thread.sleep(3000);
 		 	
@@ -36,7 +35,7 @@ public class SearchResultPageTest extends TestBase {
 	
 	
 	
-	@Test(priority=1)
+	//@Test(priority=1)
 	
 	public void verifysearchpagesortbyelement() {
 		
@@ -54,7 +53,23 @@ public class SearchResultPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=2)
+	@Test
+	public void verifyresultsautosuggestionoptiontest() throws InterruptedException {
+		
+		
+		SearchResultPage sp = new SearchResultPage();
+		
+		String text = sp.verifyresultsautosuggestionoption();
+		
+		text = text.replace("\"", "");
+		
+		Assert.assertEquals(text, "laptop");
+		
+		
+	}
+	
+	
+	//@Test(priority=2)
 	public void verifyproductclick() throws InterruptedException {
 		
 		

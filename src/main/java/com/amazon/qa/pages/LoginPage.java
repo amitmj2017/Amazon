@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazon.qa.base.TestBase;
 
 
+
 public class LoginPage extends TestBase {
 	
 	
@@ -15,6 +16,8 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
+	
+	 
 	
 	@FindBy(xpath = "//input[@id='ap_email']")
 	static WebElement stringusername;
@@ -28,9 +31,11 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//a[@data-nav-role = 'signin']/span[@class='nav-line-1']")
 	static WebElement Signedin;
 	
+
+	
 	
 
-public void login(String Username, String Password ) throws InterruptedException {
+/*public void login(String Username, String Password ) throws InterruptedException {
 	
 
 	
@@ -40,6 +45,28 @@ public void login(String Username, String Password ) throws InterruptedException
 	Thread.sleep(2000);
 	Submit.click();
 	
+	}*/
+		
+		
+		
+		public void Login(String Username, String Password) throws InterruptedException {
+		
+		stringusername.sendKeys(Username);
+		
+		Thread.sleep(1000);
+		stringpassword.sendKeys(Password);
+		
+		Thread.sleep(2000);
+		Submit.click();
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 
@@ -47,6 +74,8 @@ public Boolean signedintext() {
 	
 	
 	String signedintxt = Signedin.getText();
+	
+	
 	
 	if(signedintxt.contains("Hello"))
 	{

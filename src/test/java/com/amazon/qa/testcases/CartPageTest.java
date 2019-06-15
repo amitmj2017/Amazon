@@ -20,13 +20,14 @@ public class CartPageTest extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-
+ public static CartPage cp;
 	
 	@BeforeMethod
 	public void Setup() throws InterruptedException {
 		
 		initialization();
 		Thread.sleep(3000);
+		
 		 	
 	}
 	
@@ -35,7 +36,7 @@ public class CartPageTest extends TestBase {
 	public void verifyitemaddedtocart() throws InterruptedException {
 		
 		
-		CartPage cp = new CartPage();
+		cp = new CartPage();
 		cp.addtocart();
 		String CartTest = cp.cartitemaddedverify();
 		Assert.assertEquals(CartTest, "Added to Cart ");
@@ -44,16 +45,10 @@ public class CartPageTest extends TestBase {
 	}
 	
 	@Test
-	public void verifyemptycart() throws InterruptedException {
+	public void verifyemptycarTestt() throws InterruptedException {
 		
 		
-		ShippingPage shp = new ShippingPage();
-		CartPage cp = new CartPage();
-		cp.addtocart();
-		Thread.sleep(5000);
-		cp.checkoutcart();
-		Thread.sleep(5000);
-		Boolean text = shp.clickaddressandemptycart();
+		boolean text = cp.verifyemptycar();
 		Assert.assertTrue(text);
 		
 		

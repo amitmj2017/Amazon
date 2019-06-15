@@ -31,6 +31,10 @@ public class SearchResultPage extends TestBase {
 	static WebElement Searchtext;
 	
 	
+	@FindBy(xpath = "//h1/descendant::span[contains(text(),'laptop')]")
+	static WebElement Searchtextlaptop;
+	
+	
 	
 	public String verifyresultspagesortbyelement() {
 
@@ -39,6 +43,20 @@ public class SearchResultPage extends TestBase {
 		String SrchTxt = Searchtext.getText();
 		return SrchTxt;
 
+	}
+	
+	
+	public String verifyresultsautosuggestionoption() throws InterruptedException {
+		
+		
+		
+		hp.selectautosuggestoption();
+		String SrchTxt = Searchtextlaptop.getText();
+		return SrchTxt;
+		
+		
+		
+		
 	}
 	
 	

@@ -1,4 +1,7 @@
 package com.amazon.qa.testcases;
+import java.awt.AWTException;
+import java.io.IOException;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -7,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.amazon.qa.base.TestBase;
 import com.amazon.qa.pages.HomePage;
+import com.amazon.qa.util.screenshot;
 
 public class HomePageTest extends TestBase {
 	
@@ -16,7 +20,8 @@ public class HomePageTest extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public static HomePage hp;
+	public static HomePage hp ;
+	public static screenshot ss;
 	
 	@BeforeMethod
 	public void Setup() throws InterruptedException {
@@ -27,7 +32,7 @@ public class HomePageTest extends TestBase {
 	}
 	
 	//**********************************************Page Test******************
-	@Test
+	//@Test
 	
 	public void VerifyLogoTest() {
 		
@@ -37,23 +42,53 @@ public class HomePageTest extends TestBase {
 		
 	}
 	
-	@Test
-	public void VerifySelectedOptionSearch() throws InterruptedException {
+	//@Test
+	public void VerifySelectedOptionSearch() throws InterruptedException, IOException {
 		
 		
 		
 		String CatVal = hp.Selectcategory();
-		Assert.assertEquals(CatVal, "Kindle Store");
+		try {
+			Assert.assertEquals(CatVal, "Kindle Store");
+			ss.takescreenshot();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			
+		}
 		
 		
 	}
 	
 	
 	
+	//@Test
+	
+	public void verifybrokenlinkstest() {
+		
+		
+		hp.findbrokenlinks();
+		
+		
+	}
 	
 	
+	@Test
+	public void switchtotabtest() throws AWTException, InterruptedException, IOException {
+		
+		
+		ss = new screenshot();
+		hp.switchtotab();
+		ss.takescreenshot();
+		
+		
+		
+		//this will test the point 35 in questions text document
+		
 	
-	
+		
+	}
 	
 	
 	

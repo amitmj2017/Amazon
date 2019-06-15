@@ -1,5 +1,7 @@
 package com.amazon.qa.util;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -40,15 +42,19 @@ public void loginandsearch() throws InterruptedException {
 	
 	LoginPage lp = new LoginPage();
 	
-	lp.login(prop.getProperty("username"), prop.getProperty("password"));
+	//lp.login(prop.getProperty("username"), prop.getProperty("password"));
 	SearchResultPage sp = new SearchResultPage();
 	sp.firstsearchresultclick();
 	
-	
-	
-	
 }
 	
+
+public static void implicitwait(int time ) {
+	
+	
+	driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+	
+}
 	
 	
 	

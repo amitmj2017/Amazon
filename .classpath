@@ -22,5 +22,25 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-collections4-4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-collections4-4.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-collections4-4.3-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-collections4-4.3-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-collections4-4.3-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-compress-1.18-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-compress-1.18-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-compress-1.18-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/commons-compress-1.18-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/curvesapi-1.06.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/poi-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/poi-examples-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/poi-excelant-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/poi-ooxml-schemas-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/poi-scratchpad-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/java/Amazon/src/main/java/com/amazon/qa/util/JarFiles/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/Downloads/apache-log4j-2.11.1-bin/apache-log4j-2.11.1-bin/log4j-core-2.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/amit.mahajan/Downloads/apache-log4j-2.11.1-bin/apache-log4j-2.11.1-bin/log4j-api-2.11.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

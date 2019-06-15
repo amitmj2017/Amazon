@@ -38,7 +38,6 @@ public class CartPage extends TestBase {
 		pdp.clickaddtocart();
 		Thread.sleep(5000);
 		
-	
 	}
 	
 	
@@ -68,6 +67,19 @@ public class CartPage extends TestBase {
 		
 	}
 	
-	
+	public static boolean verifyemptycar() throws InterruptedException {
+		ShippingPage shp = new ShippingPage();
+		CartPage cp = new CartPage();
+		cp.addtocart();
+		Thread.sleep(5000);
+		cp.checkoutcart();
+		Thread.sleep(5000);
+		Boolean text = shp.clickaddressandemptycart();
+		return text;
+		
+		
+		
+		
+	}
 	
 }
